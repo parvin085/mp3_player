@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 PLAYER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="box center">
+        <div class="box-1 center">
+            <h4 id="name"></h4>
+            <div class="art">
+                <img src="" class="center" id="artist">
+            </div>
+            <div class="art-name">
+                <p class="title"></p>
+            </div>
+            <div class="prog">
+                <div class="time">
+                    <div class="start">
+                        <p id="start">0:00</p>
+                    </div>
+                    <div class="end">
+                        <p id="end">0:00</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="linechild"></div>
+                </div>
+
+            </div>
+            <div class="msc center">
+                <div class="ctrl center" onclick="backward()">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="ctrl center" id="playsong">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-pause none"></i>
+                </div>
+                <div class="ctrl center" onclick="forward()">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <audio src="" class="song"></audio>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
